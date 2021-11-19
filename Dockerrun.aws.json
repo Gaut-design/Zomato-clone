@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "nginx",
-      "image": "pavanleton/zomato-shapeai-nginx",
+      "image": "gaut-design/zomato-shapeai-nginx",
       "hostname": "nginx",
       "essentials": true,
       "postMappings": [{ "hostPort": 80, "containerPort": 80 }],
@@ -12,14 +12,14 @@
     },
     {
       "name": "client",
-      "image": "pavanleton/zomato-shapeai-client",
+      "image": "gaut-design/zomato-shapeai-client",
       "hostname": "client",
       "essentials": false,
       "memory": 300
     },
     {
       "name": "nodeserver",
-      "image": "pavanleton/zomato-shapeai-server",
+      "image": "gaut-design/zomato-shapeai-server",
       "hostname": "nodeserver",
       "essentials": false,
       "memory": 300
